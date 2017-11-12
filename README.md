@@ -1,9 +1,7 @@
-# RealTime_Labs
+# Streaming Exploration
 
-`master` branch is for active development; please visit 
-[branches](https://github.com/HortonworksUniversity/RealTime_Labs/branches "branches") for finalized versions
+This sister project to [hadoop-exploration](https://github.com/lestermartin/hadoop-exploration "hadoop-exploration") is focused on *exploring* Streaming frameworks.
 
-***most recent version tested with `HDP_2.6_docker_05_05_2017_15_01_40.tar.gz` sandbox image and implemented in branch `1.1__ami-268a4e5c`***
+I'm starting with a focus on [Apache Storm](http://storm.apache.org "Storm"); specifically [Storm 1.1.0](http://storm.apache.org/releases/1.1.0/index.html "Storm 1.1.0").
 
-
-
+For a test environment, I'm leveraging the [HDF 3.0 Sandbox](https://hortonworks.com/downloads/#sandbox "HDF Sandbox") for VirtualBox with filename of `HDF_3.0_virtualbox_12_06_2017_22_06_39_ambari_.ova` and MD5 hash of `8dd2059d4a27713fb5254ab5b49207cf`.
