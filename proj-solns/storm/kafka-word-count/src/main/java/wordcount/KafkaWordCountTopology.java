@@ -2,6 +2,7 @@ package wordcount;
 
 import org.apache.storm.Config;
 import org.apache.storm.LocalCluster;
+import org.apache.storm.StormSubmitter;
 import org.apache.storm.generated.AlreadyAliveException;
 import org.apache.storm.generated.AuthorizationException;
 import org.apache.storm.generated.InvalidTopologyException;
@@ -17,7 +18,7 @@ public class KafkaWordCountTopology {
     public static void main(String[] args) throws InvalidTopologyException, AuthorizationException, AlreadyAliveException {
         TopologyBuilder builder = new TopologyBuilder();
 
-        BrokerHosts hosts = new ZkHosts("sandbox.hortonworks.com:2181");
+        BrokerHosts hosts = new ZkHosts("sandbox-hdf.hortonworks.com:2181");
 
         SpoutConfig sc = new SpoutConfig(hosts,
                 "sentences", "/sentences",
@@ -41,15 +42,15 @@ public class KafkaWordCountTopology {
         conf.setDebug(true);
         conf.setNumWorkers(1);
 
-        /*
+
         StormSubmitter.submitTopologyWithProgressBar(
                 "word-count", conf,
                 builder.createTopology());
-        */
 
+        /*
         LocalCluster cluster = new LocalCluster();
         cluster.submitTopology("word-count-local-soln",
                 conf, builder.createTopology());
-
+        */
     }
 }
