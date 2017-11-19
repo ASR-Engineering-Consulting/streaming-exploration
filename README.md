@@ -11,7 +11,7 @@ For a test environment, I'm leveraging the [HDF 3.0 Sandbox](https://hortonworks
 
 **RECORDED DEMO**
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v= qePLLergwVM" target="_blank"><img src="http://img.youtube.com/vi/qePLLergwVM/0.jpg" 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qePLLergwVM" target="_blank"><img src="http://img.youtube.com/vi/qePLLergwVM/0.jpg" 
 alt="Developing Java Streaming Applications with Apache Storm" width="240" height="180" border="10" /></a>
 
 
